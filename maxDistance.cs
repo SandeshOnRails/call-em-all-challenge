@@ -23,8 +23,8 @@ class MaxDistance {
 
           if (isCharValid(letters[i])) {
 
-            result = Math.Max(result, (int)letters[i] - min_value-1);
-            min_value = Math.Min(min_value, (int)letters[i]);
+            result = Math.Max(result, (int)char.ToLower(letters[i]) - min_value-1);
+            min_value = Math.Min(min_value, (int)char.ToLower(letters[i]));
 
             }
 
@@ -37,6 +37,8 @@ class MaxDistance {
 
 
     public bool isCharValid(char c) {
+
+          c = char.ToLower(c);
 
           if ((int)c >= 97 && (int)c <= 122) {
              return true;
@@ -54,6 +56,9 @@ class MaxDistance {
       char[] test4 = {'x', 'z'};
       char[] test5 = {'x', '@', 'z'};
       char[] test6 = null;
+      char[] test7 = {'g', 'B', 'c','J', 'B', 'd', 'h', 'a' };
+      char[] test8 = {'z', 'b', 'c', 'a', 'd'};
+
 
 	  MaxDistance maxDist = new MaxDistance();
 
@@ -63,6 +68,10 @@ class MaxDistance {
 	  Console.WriteLine(maxDist.getMaxDistance(test4));
 	  Console.WriteLine(maxDist.getMaxDistance(test5));
     Console.WriteLine(maxDist.getMaxDistance(test6));
+    Console.WriteLine(maxDist.getMaxDistance(test7));
+    Console.WriteLine(maxDist.getMaxDistance(test8));
+
+
 
 
 

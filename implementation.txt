@@ -1,0 +1,21 @@
+Testing for Edge Cases :
+
+- array length of the parameter should be >=2
+
+- array in the parameter should not be null
+
+- letters in the array must be a valid alphabet
+
+- letter in the array is considered case-insensitive ('a' == 'A')
+
+Implementation:
+
+I traverse through the elements of the array, and keep track of the minimum value encountered, and calculate the distance between the current element and the minimum value that I have encountered through the traversal.
+
+I have worked on similar problems like this before on hackerrank, and which is the reason I have come to an efficient solution with a time complexity of O(n) on my first approach. However, first time I encountered a problem similar to this, I approached with a naive solution with a time complexity of O(n^2)
+
+Time Taken: 
+
+20 minutes (10 minutes whiteboard implementation, 10 minutes coding in c#)
+
+
