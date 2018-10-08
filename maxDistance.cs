@@ -48,11 +48,12 @@ class MaxDistance {
 
 	  static void Main () {
 
-	  char[] test1 = {'g', 'b', 'c','j', 'b', 'd', 'h', 'a' };
+	    char[] test1 = {'g', 'b', 'c','j', 'b', 'd', 'h', 'a' };
       char[] test2 = {'z', 'x', 'y'};
       char[] test3 = {};
       char[] test4 = {'x', 'z'};
       char[] test5 = {'x', '@', 'z'};
+      char[] test6 = null;
 
 	  MaxDistance maxDist = new MaxDistance();
 
@@ -61,6 +62,7 @@ class MaxDistance {
 	  Console.WriteLine(maxDist.getMaxDistance(test3));
 	  Console.WriteLine(maxDist.getMaxDistance(test4));
 	  Console.WriteLine(maxDist.getMaxDistance(test5));
+    Console.WriteLine(maxDist.getMaxDistance(test6));
 
 
 
