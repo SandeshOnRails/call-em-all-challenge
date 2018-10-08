@@ -10,7 +10,7 @@ Testing for Edge Cases :
 
 Implementation:
 
-I traverse through the elements of the array, and keep track of the minimum value encountered, and calculate the distance between the current element and the minimum value that I have encountered through the traversal.
+I traverse through the elements of the array, and keep track of the minimum value encountered, and calculate the largest distance between the current element and the minimum value that I have encountered through the traversal. To do this, I have used the result variable to store the largest distance between the current element and minimum character element that I have encountered through the traversal. The min_value variable is responsible for storing the minimum character value encountered in the traversal. I make sure the condition of i < j is checked by the for-loop as I am comparing the current element in the loop, for both largest distance and the minimum value.
 
 I have worked on similar problems like this before on hackerrank, and which is the reason I have come to an efficient solution with a time complexity of O(n) on my first approach. However, first time I encountered a problem similar to this, I approached with a naive solution with a time complexity of O(n^2)
 
